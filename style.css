@@ -19,7 +19,7 @@ body{
 }
 
 .imgkas{
-    width: 10%;
+    width: 10rem;
     height: auto;
     animation: float 6s linear infinite;
 }
