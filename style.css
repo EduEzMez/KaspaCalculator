@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F0F0F0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contenedor{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imgkas{
+    width: 10%;
+    height: auto;
+    animation: float 6s linear infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-1.5rem);
+    }
+}
+
+h1{
+    font-size: 2em;
+    font-family: "Rubik", sans-serif;
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#vkaspa{
+    font-size: 3em
+}
+
+#ckaspa{
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+#btn{
+    margin: 10px 0;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #70C7BA;
+}
