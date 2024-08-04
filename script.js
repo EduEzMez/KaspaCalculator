@@ -3,6 +3,8 @@ let dato;
 
 //valor agregado
 const valorObjetivo = 0.1768; 
+const botToken = '7025151223:AAEpZ-ga8wmCd5tsCGgh_zhiMmoyIuOKUIs'; // Tu token de bot de Telegram
+const chatId = '1346927197'; // Tu chat ID
 
 const ppkaspa = async() => {
     const res = await fetch(pkaspa);
@@ -29,10 +31,16 @@ function ejecutar(evento){
     resultado.innerHTML = `<p>$${Math.trunc(cuenta)}</p>`
 }
 
-function enviarMensajeWhatsApp() {
-    const phoneNumber = '541133505823'; // Número de teléfono con código de país
+async function enviarMensajeTelegram() {
     const message = `El valor de Kaspa ha alcanzado el objetivo de ${valorObjetivo}.`;
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+
+    try {
+        const response = await fetch(url);
+        const result = await response.json();
+        console.log('Mensaje enviado:', result);
+    } catch (error) {
+        console.error('Error al enviar el mensaje:', error);
+    }
 }
 
