@@ -2,7 +2,7 @@ const pkaspa = "https://api.kaspa.org/info/price?stringOnly=true";
 let dato;
 
 //valor agregado
-const valorObjetivo = 0.1745; 
+const valorObjetivo = 0.1715; 
 const botToken = '7025151223:AAEpZ-ga8wmCd5tsCGgh_zhiMmoyIuOKUIs'; // Tu token de bot de Telegram
 const chatId = '1346927197'; // Tu chat ID
 
