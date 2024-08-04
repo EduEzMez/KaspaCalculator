@@ -64,3 +64,9 @@ h1{
     border-radius: 10px;
     background-color: #70C7BA;
 }
+
+.version{
+    margin-top: 40px;
+    font-size: 10px;
+    color: #70C7BA;
+}
